@@ -11,9 +11,24 @@ using namespace std;
 
 class And: public Shell
 {
+    private:
+        Shell* andLeft;
+        Shell* andRight;
+
     public:
-        
-    vector<string> parser();
+        And(Shell* leftChild, Shell* rightChild)
+        {
+            andLeft = leftChild;
+            andRight = rightChild;
+        }
+
+        void print()
+        {
+            // cout << "Left Child = " << semiLeft << endl;
+            // cout << "Right Child = " << semiRight << endl;
+        }
+
+        void execute(){};
 
 };
 

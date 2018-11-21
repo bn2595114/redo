@@ -4,6 +4,8 @@
 #include <vector>
 #include "command.h"
 #include "semi.h"
+#include "and.h"
+#include "or.h"
 // #include "shell.h"
 // #include "connector.h"
 #include <boost/algorithm/string.hpp>
@@ -119,23 +121,23 @@ void checkConnectors(vector<string> passedVector)
             Command* leftChild = new Command(parsedVector[i-1]);
             Command* rightChild = new Command(parsedVector[i+1]);
             Semi* Tree = new Semi(leftChild, rightChild);
-            
+
         }
 
         if(parsedVector[i] == andConnector)
         {
             cout << "Found and" << endl;
-            // Command* leftChild == parsedVector[i-1];
-            // Command* rightChild == parsedVector[i+1];
-            // And* Tree = new And(leftChild, rightChild);
+            Command* leftChild = new Command(parsedVector[i-1]);
+            Command* rightChild = new Command(parsedVector[i-1]);
+            And* Tree = new And(leftChild, rightChild);
         }
 
         if(parsedVector[i] == orConnector)
         {
             cout << "Found or" << endl;
-            // Command* leftChild == parsedVector[i-1];
-            // Command* rightChild == parsedVector[i+1];
-            // Or* Tree = new Or(leftChild, rightChild);
+            Command* leftChild = new Command(parsedVector[i-1]);
+            Command* rightChild = new Command(parsedVector[i-1]);
+            Or* Tree = new Or(leftChild, rightChild);
         }
 
         if (parsedVector[i] != semiConnector && parsedVector[i] != andConnector

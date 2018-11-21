@@ -11,9 +11,24 @@ using namespace std;
 
 class Or: public Shell
 {
+    private:
+        Shell* semiLeft;
+        Shell* semiRight;
+
     public:
-        
-    vector<string> parser();
+        Or(Shell* leftChild, Shell* rightChild)
+        {
+            semiLeft = leftChild;
+            semiRight = rightChild;
+        }
+
+        void print()
+        {
+            // cout << "Left Child = " << semiLeft << endl;
+            // cout << "Right Child = " << semiRight << endl;
+        }
+
+        void execute(){};
 };
 
 #endif
