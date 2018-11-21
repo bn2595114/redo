@@ -119,7 +119,7 @@ void checkConnectors(vector<string> passedVector)
             Command* leftChild = new Command(parsedVector[i-1]);
             Command* rightChild = new Command(parsedVector[i+1]);
             Semi* Tree = new Semi(leftChild, rightChild);
-            Tree->print();
+            
         }
 
         if(parsedVector[i] == andConnector)
