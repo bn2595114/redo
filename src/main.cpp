@@ -122,6 +122,8 @@ void checkConnectors(vector<string> passedVector)
             Command* rightChild = new Command(parsedVector[i+1]);
             Semi* Tree = new Semi(leftChild, rightChild);
 
+            /*Add tree to vector*/
+
         }
 
         if(parsedVector[i] == andConnector)
@@ -130,6 +132,8 @@ void checkConnectors(vector<string> passedVector)
             Command* leftChild = new Command(parsedVector[i-1]);
             Command* rightChild = new Command(parsedVector[i-1]);
             And* Tree = new And(leftChild, rightChild);
+
+            /*Add tree to vector*/
         }
 
         if(parsedVector[i] == orConnector)
@@ -138,6 +142,8 @@ void checkConnectors(vector<string> passedVector)
             Command* leftChild = new Command(parsedVector[i-1]);
             Command* rightChild = new Command(parsedVector[i-1]);
             Or* Tree = new Or(leftChild, rightChild);
+
+            /*Add tree to vector*/
         }
 
         if (parsedVector[i] != semiConnector && parsedVector[i] != andConnector
