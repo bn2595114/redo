@@ -12,14 +12,14 @@ using namespace std;
 class Or: public Shell
 {
     private:
-        Shell* semiLeft;
-        Shell* semiRight;
+        Shell* orLeft;
+        Shell* orRight;
 
     public:
         Or(Shell* leftChild, Shell* rightChild)
         {
-            semiLeft = leftChild;
-            semiRight = rightChild;
+            orLeft = leftChild;
+            orRight = rightChild;
         }
 
         void print()
