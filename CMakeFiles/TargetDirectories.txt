@@ -1,0 +1,3 @@
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/CMakeFiles/rshell.dir
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/CMakeFiles/edit_cache.dir

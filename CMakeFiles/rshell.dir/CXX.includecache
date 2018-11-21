@@ -1,0 +1,88 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/command.h
+iostream
+-
+vector
+-
+shell.h
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/shell.h
+
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/main.cpp
+iostream
+-
+vector
+-
+command.h
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/command.h
+semi.h
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/semi.h
+boost/algorithm/string.hpp
+-
+boost/tokenizer.hpp
+-
+boost/token_iterator.hpp
+-
+
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/parser.cpp
+iostream
+-
+vector
+-
+string
+-
+parser.h
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/parser.h
+boost/algorithm/string.hpp
+-
+boost/tokenizer.hpp
+-
+boost/token_iterator.hpp
+-
+
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/parser.h
+iostream
+-
+vector
+-
+string
+-
+shell.h
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/shell.h
+
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/semi.h
+iostream
+-
+string
+-
+vector
+-
+shell.h
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/shell.h
+
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/shell.cpp
+iostream
+-
+shell.h
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/shell.h
+string
+-
+vector
+-
+unistd.h
+-
+
+/mnt/c/Users/incor/Desktop/CS100/Assignment 2 Redo/src/shell.h
+iostream
+-
+string
+-
+vector
+-
+
